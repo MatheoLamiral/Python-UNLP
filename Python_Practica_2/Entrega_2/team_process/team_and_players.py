@@ -6,7 +6,7 @@ ASSISTS_VALUE = 1
 
 def create_Structure(names,goals,goals_avoied,assists):
     """Esta función devuelve una lista de diccionarios a partir de 
-       las tres estructuras epasadas como parámetro.
+       las cuatro estructuras epasadas como parámetro.
        
        Args:
             names (list): lista de nombres 
@@ -25,7 +25,7 @@ def create_Structure(names,goals,goals_avoied,assists):
     #creo la lista de diccionarios a partir de structure 
     for n,g,ga,a in structure:
         stats.append({"name":n,"goals":g,"goals_avoied":ga,"assists":a})
-    
+        
     return stats
 
 def max_scorer(list):
